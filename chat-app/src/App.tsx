@@ -32,12 +32,11 @@ function App() {
                 <Home />
               </ProtectedRoute>
             }
-          ></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/register" element={<Register />}></Route>
+          />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Route>
       </Routes>
-      <Register />
     </BrowserRouter>
   );
 }
