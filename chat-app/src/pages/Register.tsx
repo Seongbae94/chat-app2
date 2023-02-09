@@ -3,7 +3,7 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, db, storage } from "../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Register = () => {
   const [err, setErr] = useState(false);
@@ -96,7 +96,9 @@ const Register = () => {
           <button>회원가입</button>
           {err && <span>문제가 발생하였습니다</span>}
         </form>
-        <p>계정이 있으세요? 로그인하기</p>
+        <p>
+          계정이 있으세요? <Link to="/login">로그인하기</Link>
+        </p>
       </div>
     </div>
   );
