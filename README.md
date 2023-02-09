@@ -1,5 +1,9 @@
 # chat-app2
 
+<div align="center">
+  프론트 코딩 테스트
+</div>
+
 Firebase 연결 방법
 1. src파일에 firebase.js를 만든다.
 2. vscode terminal에서 firebase를 인스톨한다. (npm i firebase)
